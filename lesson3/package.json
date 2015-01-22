@@ -1,0 +1,22 @@
+{
+  "name": "lesson3",
+  "version": "0.0.1",
+  "description": "superagent cheerio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "superagent",
+    "cheerio"
+  ],
+  "author": "tianqin",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.18.0",
+    "express": "^4.11.1",
+    "pac-proxy-agent": "^0.2.0",
+    "request": "^2.51.0",
+    "superagent": "^0.21.0"
+  }
+}

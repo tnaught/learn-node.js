@@ -1,0 +1,19 @@
+{
+  "name": "lesson2",
+  "version": "0.0.1",
+  "description": "generate md5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "req.query",
+    "md5"
+  ],
+  "author": "tianqin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.11.1",
+    "utility": "^1.2.1"
+  }
+}
