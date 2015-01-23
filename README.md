@@ -151,6 +151,12 @@ nodejs folder
 - *extension:* 爬虫的时候使用代理地址
     1.   使用外部模块request实现客户端请求,加上代理参数proxy: proxy url,见示例: ./lesson3/requestviaproxy.js
     2.   使用外部模块pac-proxy-agent，解析.pac文件，见示例:./lesson3/proxyviapac.js
-    3.   nodejs实现bigpipe,bigpipe是一种页面渲染机制，需要浏览器支持(ie6不支持),将一个大的页面分为多个模块，然后分模块渲染。假如这个大的页面全部渲染出来需要10s，假使这10s分配到4个子模块的渲染时间分别为1s,1s,3s,5s,服务端的机制就可以设计成首先渲染整个框架(1s)，然后依次去异步请求其他三个模块，哪个模块先到就先渲染哪个模块，那客户端显示的顺序就是1s的框架，1s的模块，3s的模块，5s的模块，对于用户来讲，1s就看到了布局，5s就看到了整个内容。示例代码: ./lesson3/bigpipe.js(代码来自网络，来源地址不记得了，以后听到这个词应该不会被唬住了)
+    3.   nodejs实现bigpipe,bigpipe是一种页面渲染机制，需要浏览器支持(ie6不支持),将一个大的页面分为多个模块，然后分模块渲染。假如这个大的页面全部渲染出来需要10s，假使这10s分配到4个子模块的渲染时间分别为1s,1s,3s,5s,服务端的机制就可以设计成首先渲染整个框架(1s)，然后依次去异步请求其他三个模块，哪个模块先到就先渲染哪个模块，那客户端显示的顺序就是1s的框架，1s的模块，3s的模块，5s的模块，对于用户来讲，1s就看到了布局，5s就看到了整个内容。示例代码: ./lesson3/bigpipe.js(代码来自网络，来源:[https://www.subbu.org/blog/2010/07/bigpipe-done-in-node-js](https://www.subbu.org/blog/2010/07/bigpipe-done-in-node-js)以后听到这个词应该不会被唬住了)
 
 ####2015/1/23
+
+**lesson4:**
+
+- *problem:*
+    for循环和forEach的区别
+    pipe的用法

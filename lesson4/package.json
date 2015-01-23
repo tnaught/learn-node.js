@@ -1,0 +1,20 @@
+{
+  "name": "lesson4",
+  "version": "0.0.1",
+  "description": "eventproxy control concurrency",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eventproxy",
+    "concurrency"
+  ],
+  "author": "tianqin",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.18.0",
+    "eventproxy": "^0.3.2",
+    "superagent": "^0.21.0"
+  }
+}

@@ -4,7 +4,7 @@ var cheerio = require('cheerio');
 
 var app = express();
 app.get('/', function(req, res, next) {
-    superagent.get('http://www.xiami.com/', function(error, sres) {
+    superagent.get('https://cnodejs.org/', function(error, sres) {
         if(error) {
             return next(error);
         }
