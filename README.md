@@ -158,5 +158,40 @@ nodejs folder
 **lesson4:**
 
 - *problem:*
-    for循环和forEach的区别
-    pipe的用法
+    1.for循环和forEach的区别
+        forEach的调用方式为array.forEach(function(item) {...})，作为参数的回调函数是一个闭包函数，即使函数里面是异步执行也可以依次获取数组预期的值。
+        
+        items.forEach(function(value) {
+            superagent.get('')
+            .end(function() {
+                console.log(value)
+            });
+        });
+        //相当于
+        for(var i = 0;i < items.length; i++ ) {
+            (function(value) {
+                superagent.get('')
+                .end(function(){
+                    console.log(value);
+                })
+            })(items[i])
+        }
+
+    2.pipe的用法
+        pipe用于stream(数据流)的操作。stream是一种基础数据结构，它允许在数据获取的过程中去操作数据，支持可读、可写或者二者均可。对于可读stream，在读取数据的时候会emit data事件，读取完成emit end事件，对于可写stream，write()方法可以开始写数据，end()方法结束数据的写入。stream的优点在于不用等到所有数据都准备好才进行操作。写入的速度不会提升，但是性能提升不好。一个文件copy的例子：
+        
+        var fs = require('fs');
+        console.log(process.argv[2], '->', process.argv[3])
+        var readStream = fs.createReadStream(process.argv[2]);
+        var writeStream = fs.createWriteStream(process.argv[3]);
+
+        readStream.on('data', function(chunk) { writeStream.write(chunk);});
+        readStream.on('end', function() { writeStream.end();});
+        readStream.on('error', function(err) {console.log('read err', err);})
+        writeStream.on('error', function(err) {console.log('write err', err);})
+        //用pipe可以直接实现以上过程:
+        readStream.pipe(writeStream);
+
+\----------24和25号是周末，还没有周末在家写代码的意识，\----------
+\------------------24号公司和部门年会，25号看电影^^\-------------------------
+
