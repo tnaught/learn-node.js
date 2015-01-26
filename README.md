@@ -195,3 +195,17 @@ nodejs folder
 \----------24和25号是周末，还没有周末在家写代码的意识，\----------
 \------------------24号公司和部门年会，25号看电影^^\-------------------------
 
+####2015/1/26
+
+**lesson5:**
+
+- *main:*
+   使用async做并发数控制 
+
+**lesson6:**
+
+- *main:*
+    学习测试框架mocha,断言库should,测试覆盖报表istanbul
+- *problem:*
+    istanbul cover _mocha会报错，
+    istanbul cover node_modules/mocha/_mocha正确，mocha是装在项目文件中，如果是装在全局文件中的话写上路径也会报错
