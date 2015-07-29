@@ -3,7 +3,7 @@ var init = require('../init.js');
 //should 是一个断言库，mocha是一个测试框架
 describe('test/init.test.js', function() {
     it('should equal 0 when n === 0', function() {
-        init.fibonacci(0).should.equal(0);
+        init.fibonacci(0).should.equal(1);
     })
     it('should equal 1 when n === 1', function() {
         init.fibonacci(1).should.equal(1);

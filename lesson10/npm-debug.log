@@ -1,0 +1,487 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'd:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'd:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'microtime' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.28
+4 warn package.json lesson10@0.0.0 No repository field.
+5 warn package.json lesson10@0.0.0 No README data
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'microtime', null ]
+8 verbose cache add name=undefined spec="microtime" args=["microtime",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'microtime',
+9 verbose parsed url   path: 'microtime',
+9 verbose parsed url   href: 'microtime' }
+10 silly lockFile aa34fe73-microtime microtime
+11 verbose lock microtime C:\Users\tianqin\AppData\Roaming\npm-cache\aa34fe73-microtime.lock
+12 silly lockFile aa34fe73-microtime microtime
+13 silly lockFile aa34fe73-microtime microtime
+14 verbose addNamed [ 'microtime', '' ]
+15 verbose addNamed [ null, '*' ]
+16 silly lockFile 1d4f731b-microtime microtime@
+17 verbose lock microtime@ C:\Users\tianqin\AppData\Roaming\npm-cache\1d4f731b-microtime.lock
+18 silly addNameRange { name: 'microtime', range: '*', hasData: false }
+19 verbose url raw microtime
+20 verbose url resolving [ 'https://registry.npmjs.org/', './microtime' ]
+21 verbose url resolved https://registry.npmjs.org/microtime
+22 info trying registry request attempt 1 at 11:40:36
+23 verbose etag "500WJ3AJEGGOAOWG1AQQDDFN"
+24 http GET https://registry.npmjs.org/microtime
+25 http 304 https://registry.npmjs.org/microtime
+26 silly registry.get cb [ 304,
+26 silly registry.get   { date: 'Thu, 16 Apr 2015 03:40:36 GMT',
+26 silly registry.get     server: 'Apache',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     'last-modified': 'Thu, 16 Apr 2015 03:40:36 GMT',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     etag: '"500WJ3AJEGGOAOWG1AQQDDFN"',
+26 silly registry.get     age: '0',
+26 silly registry.get     'x-served-by': 'cache-nrt6135-NRT',
+26 silly registry.get     'x-cache': 'HIT',
+26 silly registry.get     'x-cache-hits': '1',
+26 silly registry.get     'x-timer': 'S1429155636.768642,VS0,VE114',
+26 silly registry.get     vary: 'Accept',
+26 silly registry.get     'content-length': '0',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     connection: 'Keep-Alive' } ]
+27 verbose etag microtime from cache
+28 silly addNameRange number 2 { name: 'microtime', range: '*', hasData: true }
+29 silly addNameRange versions [ 'microtime',
+29 silly addNameRange   [ '0.1.0',
+29 silly addNameRange     '0.1.1',
+29 silly addNameRange     '0.1.2',
+29 silly addNameRange     '0.1.3',
+29 silly addNameRange     '0.1.3-1',
+29 silly addNameRange     '0.2.0',
+29 silly addNameRange     '0.3.0',
+29 silly addNameRange     '0.3.1',
+29 silly addNameRange     '0.3.2',
+29 silly addNameRange     '0.3.3',
+29 silly addNameRange     '0.4.0',
+29 silly addNameRange     '0.5.0',
+29 silly addNameRange     '0.5.1',
+29 silly addNameRange     '0.6.0',
+29 silly addNameRange     '1.0.0',
+29 silly addNameRange     '1.0.1',
+29 silly addNameRange     '1.1.0',
+29 silly addNameRange     '1.1.1',
+29 silly addNameRange     '1.2.0',
+29 silly addNameRange     '1.3.0' ] ]
+30 verbose addNamed [ 'microtime', '1.3.0' ]
+31 verbose addNamed [ '1.3.0', '1.3.0' ]
+32 silly lockFile 178f7ca8-microtime-1-3-0 microtime@1.3.0
+33 verbose lock microtime@1.3.0 C:\Users\tianqin\AppData\Roaming\npm-cache\178f7ca8-microtime-1-3-0.lock
+34 silly lockFile 178f7ca8-microtime-1-3-0 microtime@1.3.0
+35 silly lockFile 178f7ca8-microtime-1-3-0 microtime@1.3.0
+36 silly lockFile 1d4f731b-microtime microtime@
+37 silly lockFile 1d4f731b-microtime microtime@
+38 silly resolved [ { name: 'microtime',
+38 silly resolved     version: '1.3.0',
+38 silly resolved     description: 'Get the current time in microseconds',
+38 silly resolved     author:
+38 silly resolved      { name: 'Wade Simmons',
+38 silly resolved        email: 'wade@wades.im',
+38 silly resolved        url: 'http://wades.im/mons' },
+38 silly resolved     homepage: 'https://github.com/wadey/node-microtime',
+38 silly resolved     repository:
+38 silly resolved      { type: 'git',
+38 silly resolved        url: 'git://github.com/wadey/node-microtime.git' },
+38 silly resolved     main: './index',
+38 silly resolved     engines: { node: '>= 0.8.0' },
+38 silly resolved     scripts: { test: 'node test.js', install: 'node-gyp rebuild' },
+38 silly resolved     dependencies: { bindings: '1.2.x', nan: '1.7.x' },
+38 silly resolved     gypfile: true,
+38 silly resolved     readme: '[![Build Status](https://travis-ci.org/wadey/node-microtime.png)](https://travis-ci.org/wadey/node-microtime)\n\n# node-microtime\n\nDate.now() will only give you accuracy in milliseconds. This module calls\n`gettimeofday(2)` to get the time in microseconds and provides it in a few\ndifferent formats. The same warning from that function applies:\n_The resolution of the system clock is hardware dependent, and the time may\nbe updated continuously or in ``ticks.\'\'_\n\n# Installation\n\n    npm install microtime\n\n* Requires npm >= 1.1.5 (which bundles node-gyp). See https://github.com/wadey/node-microtime/issues/9\n\n# Usage\n\n### microtime.now()\n\nGet the current time in microseconds as an integer. Since JavaScript can only\nrepresent integer values accurately up to `Math.pow(2, 53)`, this value will\nbe accurate up to _Tue, 05 Jun 2255 23:47:34 GMT_.\n\n### microtime.nowDouble()\n\nGet the current time in seconds as a floating point number with microsecond\naccuracy (similar to `time.time()` in Python and `Time.now.to_f` in Ruby).\n\n### microtime.nowStruct()\n\nGet the current time and return as a list with seconds and microseconds (matching the return value of `gettimeofday(2)`).\n\n# Example\n\n    > var microtime = require(\'microtime\')\n    > microtime.now()\n    1297448895297028\n    > microtime.nowDouble()\n    1297448897.600976\n    > microtime.nowStruct()\n    [ 1297448902, 753875 ]\n\n## Estimating clock resolution\n\nStarting with version 0.1.3, there is a test script that tries to guess the clock resolution. You can run it with `npm test microtime`. Example output:\n\n    microtime.now() = 1298960083489806\n    microtime.nowDouble() = 1298960083.511521\n    microtime.nowStruct() = [ 1298960083, 511587 ]\n\n    Guessing clock resolution...\n    Clock resolution observed: 1us\n\n## Warning for Cygwin users\n\nIt appears that Cygwin only implements `gettimeofday(2)` with [millisecond accuracy](http://old.nabble.com/gettimeofday---millisecond-accuracy-p21085475.html).\n',
+38 silly resolved     readmeFilename: 'README.md',
+38 silly resolved     bugs: { url: 'https://github.com/wadey/node-microtime/issues' },
+38 silly resolved     _id: 'microtime@1.3.0',
+38 silly resolved     _shasum: 'e8c87b9935a11bc2dcbad3eaeb75cb8b3a34652f',
+38 silly resolved     _from: 'microtime@',
+38 silly resolved     _resolved: 'https://registry.npmjs.org/microtime/-/microtime-1.3.0.tgz' } ]
+39 info install microtime@1.3.0 into c:\Users\tianqin\desktop\nodejs\lesson10
+40 info installOne microtime@1.3.0
+41 info c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime unbuild
+42 verbose tar unpack C:\Users\tianqin\AppData\Roaming\npm-cache\microtime\1.3.0\package.tgz
+43 silly lockFile 2a2282f4--lesson10-node-modules-microtime tar://c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime
+44 verbose lock tar://c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime C:\Users\tianqin\AppData\Roaming\npm-cache\2a2282f4--lesson10-node-modules-microtime.lock
+45 silly lockFile 8448f205-ache-microtime-1-3-0-package-tgz tar://C:\Users\tianqin\AppData\Roaming\npm-cache\microtime\1.3.0\package.tgz
+46 verbose lock tar://C:\Users\tianqin\AppData\Roaming\npm-cache\microtime\1.3.0\package.tgz C:\Users\tianqin\AppData\Roaming\npm-cache\8448f205-ache-microtime-1-3-0-package-tgz.lock
+47 silly gunzTarPerm modes [ '755', '644' ]
+48 silly gunzTarPerm extractEntry package.json
+49 silly gunzTarPerm extractEntry .npmignore
+50 silly gunzTarPerm extractEntry README.md
+51 silly gunzTarPerm extractEntry LICENSE
+52 silly gunzTarPerm extractEntry index.js
+53 silly gunzTarPerm extractEntry test.js
+54 silly gunzTarPerm extractEntry .travis.yml
+55 silly gunzTarPerm extractEntry binding.gyp
+56 silly gunzTarPerm extractEntry src/microtime.cc
+57 silly lockFile 2a2282f4--lesson10-node-modules-microtime tar://c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime
+58 silly lockFile 2a2282f4--lesson10-node-modules-microtime tar://c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime
+59 silly lockFile 8448f205-ache-microtime-1-3-0-package-tgz tar://C:\Users\tianqin\AppData\Roaming\npm-cache\microtime\1.3.0\package.tgz
+60 silly lockFile 8448f205-ache-microtime-1-3-0-package-tgz tar://C:\Users\tianqin\AppData\Roaming\npm-cache\microtime\1.3.0\package.tgz
+61 info preinstall microtime@1.3.0
+62 verbose readDependencies using package.json deps
+63 verbose readDependencies using package.json deps
+64 verbose cache add [ 'bindings@1.2.x', null ]
+65 verbose cache add name=undefined spec="bindings@1.2.x" args=["bindings@1.2.x",null]
+66 verbose parsed url { protocol: null,
+66 verbose parsed url   slashes: null,
+66 verbose parsed url   auth: null,
+66 verbose parsed url   host: null,
+66 verbose parsed url   port: null,
+66 verbose parsed url   hostname: null,
+66 verbose parsed url   hash: null,
+66 verbose parsed url   search: null,
+66 verbose parsed url   query: null,
+66 verbose parsed url   pathname: 'bindings@1.2.x',
+66 verbose parsed url   path: 'bindings@1.2.x',
+66 verbose parsed url   href: 'bindings@1.2.x' }
+67 verbose cache add name="bindings" spec="1.2.x" args=["bindings","1.2.x"]
+68 verbose parsed url { protocol: null,
+68 verbose parsed url   slashes: null,
+68 verbose parsed url   auth: null,
+68 verbose parsed url   host: null,
+68 verbose parsed url   port: null,
+68 verbose parsed url   hostname: null,
+68 verbose parsed url   hash: null,
+68 verbose parsed url   search: null,
+68 verbose parsed url   query: null,
+68 verbose parsed url   pathname: '1.2.x',
+68 verbose parsed url   path: '1.2.x',
+68 verbose parsed url   href: '1.2.x' }
+69 verbose addNamed [ 'bindings', '1.2.x' ]
+70 verbose addNamed [ null, '>=1.2.0-0 <1.3.0-0' ]
+71 silly lockFile 9e58a7b0-bindings-1-2-x bindings@1.2.x
+72 verbose lock bindings@1.2.x C:\Users\tianqin\AppData\Roaming\npm-cache\9e58a7b0-bindings-1-2-x.lock
+73 verbose cache add [ 'nan@1.7.x', null ]
+74 verbose cache add name=undefined spec="nan@1.7.x" args=["nan@1.7.x",null]
+75 verbose parsed url { protocol: null,
+75 verbose parsed url   slashes: null,
+75 verbose parsed url   auth: null,
+75 verbose parsed url   host: null,
+75 verbose parsed url   port: null,
+75 verbose parsed url   hostname: null,
+75 verbose parsed url   hash: null,
+75 verbose parsed url   search: null,
+75 verbose parsed url   query: null,
+75 verbose parsed url   pathname: 'nan@1.7.x',
+75 verbose parsed url   path: 'nan@1.7.x',
+75 verbose parsed url   href: 'nan@1.7.x' }
+76 verbose cache add name="nan" spec="1.7.x" args=["nan","1.7.x"]
+77 verbose parsed url { protocol: null,
+77 verbose parsed url   slashes: null,
+77 verbose parsed url   auth: null,
+77 verbose parsed url   host: null,
+77 verbose parsed url   port: null,
+77 verbose parsed url   hostname: null,
+77 verbose parsed url   hash: null,
+77 verbose parsed url   search: null,
+77 verbose parsed url   query: null,
+77 verbose parsed url   pathname: '1.7.x',
+77 verbose parsed url   path: '1.7.x',
+77 verbose parsed url   href: '1.7.x' }
+78 verbose addNamed [ 'nan', '1.7.x' ]
+79 verbose addNamed [ null, '>=1.7.0-0 <1.8.0-0' ]
+80 silly lockFile 1213edba-nan-1-7-x nan@1.7.x
+81 verbose lock nan@1.7.x C:\Users\tianqin\AppData\Roaming\npm-cache\1213edba-nan-1-7-x.lock
+82 silly addNameRange { name: 'bindings', range: '>=1.2.0-0 <1.3.0-0', hasData: false }
+83 silly addNameRange { name: 'nan', range: '>=1.7.0-0 <1.8.0-0', hasData: false }
+84 verbose url raw bindings
+85 verbose url resolving [ 'https://registry.npmjs.org/', './bindings' ]
+86 verbose url resolved https://registry.npmjs.org/bindings
+87 info trying registry request attempt 1 at 11:40:37
+88 verbose etag "5997G8NY1OJEMZ1HNHL7VBX5J"
+89 http GET https://registry.npmjs.org/bindings
+90 verbose url raw nan
+91 verbose url resolving [ 'https://registry.npmjs.org/', './nan' ]
+92 verbose url resolved https://registry.npmjs.org/nan
+93 info trying registry request attempt 1 at 11:40:37
+94 verbose etag "5IOU70T0MNE17LALUE9YPLT5T"
+95 http GET https://registry.npmjs.org/nan
+96 http 304 https://registry.npmjs.org/bindings
+97 silly registry.get cb [ 304,
+97 silly registry.get   { date: 'Thu, 16 Apr 2015 03:40:37 GMT',
+97 silly registry.get     server: 'Apache',
+97 silly registry.get     via: '1.1 varnish',
+97 silly registry.get     'last-modified': 'Thu, 16 Apr 2015 03:39:46 GMT',
+97 silly registry.get     'cache-control': 'max-age=60',
+97 silly registry.get     etag: '"5997G8NY1OJEMZ1HNHL7VBX5J"',
+97 silly registry.get     age: '55',
+97 silly registry.get     'x-served-by': 'cache-nrt6134-NRT',
+97 silly registry.get     'x-cache': 'HIT',
+97 silly registry.get     'x-cache-hits': '3',
+97 silly registry.get     'x-timer': 'S1429155637.276569,VS0,VE0',
+97 silly registry.get     vary: 'Accept',
+97 silly registry.get     'content-length': '0',
+97 silly registry.get     'keep-alive': 'timeout=10, max=50',
+97 silly registry.get     connection: 'Keep-Alive' } ]
+98 verbose etag bindings from cache
+99 http 304 https://registry.npmjs.org/nan
+100 silly registry.get cb [ 304,
+100 silly registry.get   { date: 'Thu, 16 Apr 2015 03:40:37 GMT',
+100 silly registry.get     server: 'Apache',
+100 silly registry.get     via: '1.1 varnish',
+100 silly registry.get     'last-modified': 'Thu, 16 Apr 2015 03:40:37 GMT',
+100 silly registry.get     'cache-control': 'max-age=60',
+100 silly registry.get     etag: '"5IOU70T0MNE17LALUE9YPLT5T"',
+100 silly registry.get     age: '9',
+100 silly registry.get     'x-served-by': 'cache-nrt6122-NRT',
+100 silly registry.get     'x-cache': 'HIT',
+100 silly registry.get     'x-cache-hits': '1',
+100 silly registry.get     'x-timer': 'S1429155637.281943,VS0,VE1',
+100 silly registry.get     vary: 'Accept',
+100 silly registry.get     'content-length': '0',
+100 silly registry.get     'keep-alive': 'timeout=10, max=50',
+100 silly registry.get     connection: 'Keep-Alive' } ]
+101 verbose etag nan from cache
+102 silly addNameRange number 2 { name: 'bindings', range: '>=1.2.0-0 <1.3.0-0', hasData: true }
+103 silly addNameRange versions [ 'bindings',
+103 silly addNameRange   [ '0.0.1',
+103 silly addNameRange     '0.1.0',
+103 silly addNameRange     '0.1.1',
+103 silly addNameRange     '0.2.0',
+103 silly addNameRange     '0.2.1',
+103 silly addNameRange     '0.2.2',
+103 silly addNameRange     '0.2.3',
+103 silly addNameRange     '0.2.4',
+103 silly addNameRange     '0.3.0',
+103 silly addNameRange     '0.4.0',
+103 silly addNameRange     '1.0.0',
+103 silly addNameRange     '1.1.0',
+103 silly addNameRange     '1.1.1',
+103 silly addNameRange     '1.2.0',
+103 silly addNameRange     '1.2.1' ] ]
+104 verbose addNamed [ 'bindings', '1.2.1' ]
+105 verbose addNamed [ '1.2.1', '1.2.1' ]
+106 silly lockFile e9060511-bindings-1-2-1 bindings@1.2.1
+107 verbose lock bindings@1.2.1 C:\Users\tianqin\AppData\Roaming\npm-cache\e9060511-bindings-1-2-1.lock
+108 silly addNameRange number 2 { name: 'nan', range: '>=1.7.0-0 <1.8.0-0', hasData: true }
+109 silly addNameRange versions [ 'nan',
+109 silly addNameRange   [ '0.3.0-wip',
+109 silly addNameRange     '0.3.0-wip2',
+109 silly addNameRange     '0.3.0',
+109 silly addNameRange     '0.3.1',
+109 silly addNameRange     '0.3.2',
+109 silly addNameRange     '0.4.0',
+109 silly addNameRange     '0.4.1',
+109 silly addNameRange     '0.4.2',
+109 silly addNameRange     '0.4.3',
+109 silly addNameRange     '0.4.4',
+109 silly addNameRange     '0.5.0',
+109 silly addNameRange     '0.5.1',
+109 silly addNameRange     '0.5.2',
+109 silly addNameRange     '0.6.0',
+109 silly addNameRange     '0.7.0',
+109 silly addNameRange     '0.7.1',
+109 silly addNameRange     '0.8.0',
+109 silly addNameRange     '1.0.0',
+109 silly addNameRange     '1.1.0',
+109 silly addNameRange     '1.1.1',
+109 silly addNameRange     '1.1.2',
+109 silly addNameRange     '1.2.0',
+109 silly addNameRange     '1.3.0',
+109 silly addNameRange     '1.4.0',
+109 silly addNameRange     '1.4.1',
+109 silly addNameRange     '1.5.0',
+109 silly addNameRange     '1.4.2',
+109 silly addNameRange     '1.4.3',
+109 silly addNameRange     '1.5.1',
+109 silly addNameRange     '1.5.2',
+109 silly addNameRange     '1.6.0',
+109 silly addNameRange     '1.5.3',
+109 silly addNameRange     '1.6.1',
+109 silly addNameRange     '1.6.2',
+109 silly addNameRange     '1.7.0' ] ]
+110 verbose addNamed [ 'nan', '1.7.0' ]
+111 verbose addNamed [ '1.7.0', '1.7.0' ]
+112 silly lockFile e44e3bb6-nan-1-7-0 nan@1.7.0
+113 verbose lock nan@1.7.0 C:\Users\tianqin\AppData\Roaming\npm-cache\e44e3bb6-nan-1-7-0.lock
+114 silly lockFile e9060511-bindings-1-2-1 bindings@1.2.1
+115 silly lockFile e9060511-bindings-1-2-1 bindings@1.2.1
+116 silly lockFile 9e58a7b0-bindings-1-2-x bindings@1.2.x
+117 silly lockFile 9e58a7b0-bindings-1-2-x bindings@1.2.x
+118 silly lockFile e44e3bb6-nan-1-7-0 nan@1.7.0
+119 silly lockFile e44e3bb6-nan-1-7-0 nan@1.7.0
+120 silly lockFile 1213edba-nan-1-7-x nan@1.7.x
+121 silly lockFile 1213edba-nan-1-7-x nan@1.7.x
+122 silly resolved [ { name: 'bindings',
+122 silly resolved     description: 'Helper module for loading your native module\'s .node file',
+122 silly resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+122 silly resolved     version: '1.2.1',
+122 silly resolved     author:
+122 silly resolved      { name: 'Nathan Rajlich',
+122 silly resolved        email: 'nathan@tootallnate.net',
+122 silly resolved        url: 'http://tootallnate.net' },
+122 silly resolved     repository:
+122 silly resolved      { type: 'git',
+122 silly resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+122 silly resolved     main: './bindings.js',
+122 silly resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+122 silly resolved     homepage: 'https://github.com/TooTallNate/node-bindings',
+122 silly resolved     license: 'MIT',
+122 silly resolved     readme: 'node-bindings\n=============\n### Helper module for loading your native module\'s .node file\n\nThis is a helper module for authors of Node.js native addon modules.\nIt is basically the "swiss army knife" of `require()`ing your native module\'s\n`.node` file.\n\nThroughout the course of Node\'s native addon history, addons have ended up being\ncompiled in a variety of different places, depending on which build tool and which\nversion of node was used. To make matters worse, now the _gyp_ build tool can\nproduce either a _Release_ or _Debug_ build, each being built into different\nlocations.\n\nThis module checks _all_ the possible locations that a native addon would be built\nat, and returns the first one that loads successfully.\n\n\nInstallation\n------------\n\nInstall with `npm`:\n\n``` bash\n$ npm install bindings\n```\n\nOr add it to the `"dependencies"` section of your _package.json_ file.\n\n\nExample\n-------\n\n`require()`ing the proper bindings file for the current node version, platform\nand architecture is as simple as:\n\n``` js\nvar bindings = require(\'bindings\')(\'binding.node\')\n\n// Use your bindings defined in your C files\nbindings.your_c_function()\n```\n\n\nNice Error Output\n-----------------\n\nWhen the `.node` file could not be loaded, `node-bindings` throws an Error with\na nice error message telling you exactly what was tried. You can also check the\n`err.tries` Array property.\n\n```\nError: Could not load the bindings file. Tried:\n → /Users/nrajlich/ref/build/binding.node\n → /Users/nrajlich/ref/build/Debug/binding.node\n → /Users/nrajlich/ref/build/Release/binding.node\n → /Users/nrajlich/ref/out/Debug/binding.node\n → /Users/nrajlich/ref/Debug/binding.node\n → /Users/nrajlich/ref/out/Release/binding.node\n → /Users/nrajlich/ref/Release/binding.node\n → /Users/nrajlich/ref/build/default/binding.node\n → /Users/nrajlich/ref/compiled/0.8.2/darwin/x64/binding.node\n    at bindings (/Users/nrajlich/ref/node_modules/bindings/bindings.js:84:13)\n    at Object.<anonymous> (/Users/nrajlich/ref/lib/ref.js:5:47)\n    at Module._compile (module.js:449:26)\n    at Object.Module._extensions..js (module.js:467:10)\n    at Module.load (module.js:356:32)\n    at Function.Module._load (module.js:312:12)\n    ...\n```\n\n\nLicense\n-------\n\n(The MIT License)\n\nCopyright (c) 2012 Nathan Rajlich &lt;nathan@tootallnate.net&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+122 silly resolved     readmeFilename: 'README.md',
+122 silly resolved     _id: 'bindings@1.2.1',
+122 silly resolved     _shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+122 silly resolved     _from: 'bindings@1.2.x',
+122 silly resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz' },
+122 silly resolved   { name: 'nan',
+122 silly resolved     version: '1.7.0',
+122 silly resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+122 silly resolved     main: 'include_dirs.js',
+122 silly resolved     repository: { type: 'git', url: 'git://github.com/rvagg/nan.git' },
+122 silly resolved     scripts:
+122 silly resolved      { test: 'tap --gc test/js/*-test.js',
+122 silly resolved        'rebuild-tests': 'pangyp rebuild --directory test' },
+122 silly resolved     contributors:
+122 silly resolved      [ [Object],
+122 silly resolved        [Object],
+122 silly resolved        [Object],
+122 silly resolved        [Object],
+122 silly resolved        [Object],
+122 silly resolved        [Object],
+122 silly resolved        [Object] ],
+122 silly resolved     devDependencies:
+122 silly resolved      { bindings: '~1.2.1',
+122 silly resolved        'node-gyp': '~1.0.2',
+122 silly resolved        pangyp: '~2.0.1',
+122 silly resolved        tap: '~0.5.0',
+122 silly resolved        xtend: '~4.0.0' },
+122 silly resolved     license: 'MIT',
+122 silly resolved     bugs: { url: 'https://github.com/rvagg/nan/issues' },
+122 silly resolved     readme: 'ERROR: No README data found!',
+122 silly resolved     homepage: 'https://github.com/rvagg/nan',
+122 silly resolved     _id: 'nan@1.7.0',
+122 silly resolved     _shasum: '755b997404e83cbe7bc08bc3c5c56291bce87438',
+122 silly resolved     _from: 'nan@1.7.x',
+122 silly resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-1.7.0.tgz' } ]
+123 info install bindings@1.2.1 into c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime
+124 info install nan@1.7.0 into c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime
+125 info installOne bindings@1.2.1
+126 info installOne nan@1.7.0
+127 info c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime\node_modules\bindings unbuild
+128 info c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime\node_modules\nan unbuild
+129 verbose tar unpack C:\Users\tianqin\AppData\Roaming\npm-cache\bindings\1.2.1\package.tgz
+130 silly lockFile 5e933a90--microtime-node-modules-bindings tar://c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime\node_modules\bindings
+131 verbose lock tar://c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime\node_modules\bindings C:\Users\tianqin\AppData\Roaming\npm-cache\5e933a90--microtime-node-modules-bindings.lock
+132 silly lockFile a5269822-cache-bindings-1-2-1-package-tgz tar://C:\Users\tianqin\AppData\Roaming\npm-cache\bindings\1.2.1\package.tgz
+133 verbose lock tar://C:\Users\tianqin\AppData\Roaming\npm-cache\bindings\1.2.1\package.tgz C:\Users\tianqin\AppData\Roaming\npm-cache\a5269822-cache-bindings-1-2-1-package-tgz.lock
+134 verbose tar unpack C:\Users\tianqin\AppData\Roaming\npm-cache\nan\1.7.0\package.tgz
+135 silly lockFile 3d2e13a0-dules-microtime-node-modules-nan tar://c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime\node_modules\nan
+136 verbose lock tar://c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime\node_modules\nan C:\Users\tianqin\AppData\Roaming\npm-cache\3d2e13a0-dules-microtime-node-modules-nan.lock
+137 silly lockFile 1394a00a--npm-cache-nan-1-7-0-package-tgz tar://C:\Users\tianqin\AppData\Roaming\npm-cache\nan\1.7.0\package.tgz
+138 verbose lock tar://C:\Users\tianqin\AppData\Roaming\npm-cache\nan\1.7.0\package.tgz C:\Users\tianqin\AppData\Roaming\npm-cache\1394a00a--npm-cache-nan-1-7-0-package-tgz.lock
+139 silly gunzTarPerm modes [ '755', '644' ]
+140 silly gunzTarPerm modes [ '755', '644' ]
+141 silly gunzTarPerm extractEntry package.json
+142 silly gunzTarPerm extractEntry package.json
+143 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+144 silly gunzTarPerm extractEntry README.md
+145 silly gunzTarPerm extractEntry bindings.js
+146 silly gunzTarPerm extractEntry include_dirs.js
+147 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
+148 silly gunzTarPerm extractEntry LICENSE.md
+149 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+150 silly gunzTarPerm extractEntry .dntrc
+151 silly gunzTarPerm modified mode [ '.dntrc', 436, 420 ]
+152 silly gunzTarPerm extractEntry appveyor.yml
+153 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 420 ]
+154 silly gunzTarPerm extractEntry nan.h
+155 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+156 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+157 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 420 ]
+158 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+159 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 420 ]
+160 silly gunzTarPerm extractEntry nan_new.h
+161 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 420 ]
+162 silly gunzTarPerm extractEntry nan_string_bytes.h
+163 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 420 ]
+164 silly gunzTarPerm extractEntry CHANGELOG.md
+165 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+166 silly lockFile 5e933a90--microtime-node-modules-bindings tar://c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime\node_modules\bindings
+167 silly lockFile 5e933a90--microtime-node-modules-bindings tar://c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime\node_modules\bindings
+168 silly lockFile a5269822-cache-bindings-1-2-1-package-tgz tar://C:\Users\tianqin\AppData\Roaming\npm-cache\bindings\1.2.1\package.tgz
+169 silly lockFile a5269822-cache-bindings-1-2-1-package-tgz tar://C:\Users\tianqin\AppData\Roaming\npm-cache\bindings\1.2.1\package.tgz
+170 info preinstall bindings@1.2.1
+171 verbose readDependencies using package.json deps
+172 verbose readDependencies using package.json deps
+173 silly resolved []
+174 verbose about to build c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime\node_modules\bindings
+175 info build c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime\node_modules\bindings
+176 verbose linkStuff [ false,
+176 verbose linkStuff   false,
+176 verbose linkStuff   false,
+176 verbose linkStuff   'c:\\Users\\tianqin\\desktop\\nodejs\\lesson10\\node_modules\\microtime\\node_modules' ]
+177 info linkStuff bindings@1.2.1
+178 verbose linkBins bindings@1.2.1
+179 verbose linkMans bindings@1.2.1
+180 verbose rebuildBundles bindings@1.2.1
+181 info install bindings@1.2.1
+182 info postinstall bindings@1.2.1
+183 silly lockFile 3d2e13a0-dules-microtime-node-modules-nan tar://c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime\node_modules\nan
+184 silly lockFile 3d2e13a0-dules-microtime-node-modules-nan tar://c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime\node_modules\nan
+185 silly lockFile 1394a00a--npm-cache-nan-1-7-0-package-tgz tar://C:\Users\tianqin\AppData\Roaming\npm-cache\nan\1.7.0\package.tgz
+186 silly lockFile 1394a00a--npm-cache-nan-1-7-0-package-tgz tar://C:\Users\tianqin\AppData\Roaming\npm-cache\nan\1.7.0\package.tgz
+187 info preinstall nan@1.7.0
+188 verbose readDependencies using package.json deps
+189 verbose readDependencies using package.json deps
+190 silly resolved []
+191 verbose about to build c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime\node_modules\nan
+192 info build c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime\node_modules\nan
+193 verbose linkStuff [ false,
+193 verbose linkStuff   false,
+193 verbose linkStuff   false,
+193 verbose linkStuff   'c:\\Users\\tianqin\\desktop\\nodejs\\lesson10\\node_modules\\microtime\\node_modules' ]
+194 info linkStuff nan@1.7.0
+195 verbose linkBins nan@1.7.0
+196 verbose linkMans nan@1.7.0
+197 verbose rebuildBundles nan@1.7.0
+198 info install nan@1.7.0
+199 info postinstall nan@1.7.0
+200 verbose about to build c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime
+201 info build c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime
+202 verbose linkStuff [ false,
+202 verbose linkStuff   false,
+202 verbose linkStuff   false,
+202 verbose linkStuff   'c:\\Users\\tianqin\\desktop\\nodejs\\lesson10\\node_modules' ]
+203 info linkStuff microtime@1.3.0
+204 verbose linkBins microtime@1.3.0
+205 verbose linkMans microtime@1.3.0
+206 verbose rebuildBundles microtime@1.3.0
+207 verbose rebuildBundles [ 'bindings', 'nan' ]
+208 info install microtime@1.3.0
+209 verbose unsafe-perm in lifecycle true
+210 info microtime@1.3.0 Failed to exec install script
+211 info c:\Users\tianqin\desktop\nodejs\lesson10\node_modules\microtime unbuild
+212 info preuninstall microtime@1.3.0
+213 info uninstall microtime@1.3.0
+214 verbose true,c:\Users\tianqin\desktop\nodejs\lesson10\node_modules,c:\Users\tianqin\desktop\nodejs\lesson10\node_modules unbuild microtime@1.3.0
+215 info postuninstall microtime@1.3.0
+216 error microtime@1.3.0 install: `node-gyp rebuild`
+216 error Exit status 1
+217 error Failed at the microtime@1.3.0 install script.
+217 error This is most likely a problem with the microtime package,
+217 error not with npm itself.
+217 error Tell the author that this fails on your system:
+217 error     node-gyp rebuild
+217 error You can get their info via:
+217 error     npm owner ls microtime
+217 error There is likely additional logging output above.
+218 error System Windows_NT 6.1.7601
+219 error command "d:\\Program Files\\nodejs\\node.exe" "d:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "microtime"
+220 error cwd c:\Users\tianqin\desktop\nodejs\lesson10
+221 error node -v v0.10.28
+222 error npm -v 1.4.9
+223 error code ELIFECYCLE
+224 verbose exit [ 1, true ]

@@ -208,4 +208,53 @@ nodejs folder
     学习测试框架mocha,断言库should,测试覆盖报表istanbul
 - *problem:*
     istanbul cover _mocha会报错，
-    istanbul cover node_modules/mocha/_mocha正确，mocha是装在项目文件中，如果是装在全局文件中的话写上路径也会报错
+    istanbul cover node_modules/mocha/_mocha 正确，mocha是装在项目文件中，如果是装在全局文件中的话写上路径也会报错
+
+####2015/4/14
+
+**lesson9:**
+
+- *main:*
+    正则表达式的使用，看了两篇文章：
+    [30十分钟入门教程](http://deerchao.net/tutorials/regex/regex.htm)
+    [正则表达式之：零宽断言不『消费』](http://fxck.it/post/50558232873)
+    学习一些常用的正则表达式的写法
+
+####2015/4/15
+
+**lesson10:**
+
+- *main:*
+    了解benchmark: 比较不同方法实现相同功能效率比较的工具
+
+####2015/4/16
+
+**lesson11:**
+
+- *main:*
+    关于js的一些基础知识：变量作用域、闭包和this，比较基础
+
+####2015/4/16
+
+**lesson12:**
+
+- *main:*
+    线上部署，heroku
+
+####2015/4/16
+
+**lesson13:**
+
+- *main:*
+    持续集成平台:travis
+
+####2015/4/20
+
+**lesson16:**
+
+- *main:*
+    cookie和session
+
+    session可以存放在：
+    - 内存中
+    -  

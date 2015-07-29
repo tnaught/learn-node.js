@@ -1,0 +1,15 @@
+{
+  "name": "lesson7",
+  "version": "0.0.1",
+  "description": "mocha in browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "mocha",
+    "browser"
+  ],
+  "author": "tianqin",
+  "license": "ISC"
+}
